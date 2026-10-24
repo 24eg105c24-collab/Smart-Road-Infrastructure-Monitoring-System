@@ -1,0 +1,15 @@
+{
+  "name": "smart-road-infrastructure",
+  "version": "1.0.0",
+  "description": "Smart Road Infrastructure Monitoring System for Uppal X Roads to Ghatkesar (NH163) Corridor",
+  "scripts": {
+    "setup": "npm --prefix backend install && npm --prefix frontend install",
+    "server": "npm --prefix backend start",
+    "client": "npm --prefix frontend run dev",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix backend start\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
